@@ -1,29 +1,29 @@
 import java.util.Scanner;
 
-public class problem4 {
+public class problem5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        System.out.println(factorial(n));
+        System.out.println(fibonacci(n));
     }
 
     /**
-     * this method calculates the factorial of the given number
+     * this method calculates the n-th element of the fibonacci sequence
      * it uses a recursive approach
      * time complexity: O(n), where n is the given number
      * the method iterates through numbers from n to 0,
      * resulting in linear time complexity
      *
      * @param n the given number
-     * @return the factorial of the given number
+     * @return n-th element of the fibonacci sequence
      */
-    public static int factorial(int n){
-        if (n==1 || n==0){
-            return 1;
+    public static int fibonacci(int n){
+        if (n==0 || n==1){
+            return n;
         }
         else {
-            return n*factorial(n-1);
+            return fibonacci(n-1)+fibonacci(n-2);
         }
     }
 }

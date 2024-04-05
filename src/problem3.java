@@ -9,7 +9,8 @@ public class problem3 {
     }
 
     /**
-     * this method calculates the average of the array using recursion
+     * this method checks if the given number is prime of composite
+     * it uses a recursive approach
      * time complexity: O(n/2), where n is the given number
      * the method iterates through numbers from n/2 to 1,
      * resulting in linear time complexity

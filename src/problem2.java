@@ -12,7 +12,8 @@ public class problem2 {
     }
 
     /**
-     * this method returns the average of the array using recursion
+     * this method returns the average of the array
+     * it uses a recursive approach
      * time complexity: O(n), where n is the size of the array
      * the method iterates through elements of the array from 0 to n,
      * resulting in linear time complexity
