@@ -7,10 +7,11 @@ public class problem3 {
 
         primeOrComp(n,n/2);
     }
+
     /**
-     * this method prints the average of the array using recursion
+     * this method calculates the average of the array using recursion
      * time complexity: O(n/2), where n is the given number
-     * the method iterates through elements of the array from 0 to a,
+     * the method iterates through numbers from n/2 to 1,
      * resulting in linear time complexity
      *
      * @param n the given number

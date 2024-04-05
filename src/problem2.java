@@ -10,6 +10,7 @@ public class problem2 {
         }
         System.out.println("avgOfArr: " + avgOfArr(array, 0, array[0]));
     }
+
     /**
      * this method returns the average of the array using recursion
      * time complexity: O(n), where n is the size of the array
