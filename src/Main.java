@@ -10,11 +10,12 @@ public class Main {
         }
         System.out.println("minOfArr: " + minOfArr(array, 0, array[0]));
         System.out.println("avgOfArr: " + avgOfArr(array, 0, array[0]));
+        primeOrComp(n,n/2);
     }
 
     /**
      * this method returns the minimum of the array using recursion
-     * time complexity: O(n)
+     * time complexity: O(n), where n is the size of the array
      * the method iterates through elements of the array from 0 to n,
      * resulting in linear time complexity
      *
@@ -37,7 +38,7 @@ public class Main {
 
     /**
      * this method returns the average of the array using recursion
-     * time complexity: O(n)
+     * time complexity: O(n), where n is the size of the array
      * the method iterates through elements of the array from 0 to n,
      * resulting in linear time complexity
      *
@@ -55,4 +56,24 @@ public class Main {
         }
     }
 
+    /**
+     * this method prints the average of the array using recursion
+     * time complexity: O(n/2), where n is the given number
+     * the method iterates through elements of the array from 0 to a,
+     * resulting in linear time complexity
+     *
+     * @param n the given number
+     * @param a the number for checking divisibility
+     */
+    public static void primeOrComp(int n, int a){
+        if (a<2){
+            System.out.println("Prime "+a);
+        }
+        else if (n%a==0) {
+            System.out.println("Composite "+a);
+        }
+        else {
+            primeOrComp(n, a-1);
+        }
+    }
 }
