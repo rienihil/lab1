@@ -11,9 +11,9 @@ public class problem5 {
     /**
      * this method calculates the n-th element of the fibonacci sequence
      * it uses a recursive approach
-     * time complexity: O(n), where n is the given number
-     * the method iterates through numbers from n to 0,
-     * resulting in linear time complexity
+     * time complexity: O(2^n), where n is the given number
+     * the method branches out each time,
+     * resulting in exponential time complexity
      *
      * @param n the given number
      * @return n-th element of the fibonacci sequence
