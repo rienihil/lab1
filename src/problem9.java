@@ -25,7 +25,6 @@ public class problem9 {
             return 1;
         }
         else{
-            System.out.println(1);
             return binomialCoef(n-1,k-1)+binomialCoef(n,k-1);
         }
     }
