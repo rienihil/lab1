@@ -6,7 +6,7 @@ public class problem6 {
         int a = sc.nextInt();
         int n = sc.nextInt();
 
-        System.out.println(power(a,n));
+        System.out.println("power" + power(a,n));
     }
 
     /**

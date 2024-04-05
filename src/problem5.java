@@ -5,7 +5,7 @@ public class problem5 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        System.out.println(fibonacci(n));
+        System.out.println("fibonacci: " + fibonacci(n));
     }
 
     /**

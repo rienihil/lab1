@@ -5,6 +5,7 @@ public class problem3 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
+        System.out.print("primeOrComp: ");
         primeOrComp(n,n/2);
     }
 
@@ -17,13 +18,14 @@ public class problem3 {
      *
      * @param n the given number
      * @param a the number for checking divisibility
+     * the method prints "Prime" or "Composite"
      */
     public static void primeOrComp(int n, int a){
         if (a<2){
-            System.out.println("Prime "+a);
+            System.out.println("Prime");
         }
         else if (n%a==0) {
-            System.out.println("Composite "+a);
+            System.out.println("Composite");
         }
         else {
             primeOrComp(n, a-1);
