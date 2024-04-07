@@ -1,12 +1,16 @@
 import java.util.Scanner;
 
 public class problem3 {
-    public static void main(String[] args) {
+    public static void run() {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number: ");
         int n = sc.nextInt();
 
-        System.out.print("primeOrComp: ");
+        System.out.print("result: ");
+        long startTime = System.nanoTime();
         primeOrComp(n,n/2);
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
     }
 
     /**

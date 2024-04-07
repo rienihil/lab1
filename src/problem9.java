@@ -1,12 +1,17 @@
 import java.util.Scanner;
 
 public class problem9 {
-    public static void main(String[] args) {
+    public static void run() {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the bigger number: ");
         int n = sc.nextInt();
+        System.out.println("Enter the smaller number: ");
         int k = sc.nextInt();
 
-        System.out.println("binomialCoef: " + binomialCoef(n, k));
+        long startTime = System.nanoTime();
+        System.out.println("result: " + binomialCoef(n, k)+
+                "\nruntime: "+ (double)(System.nanoTime() - startTime)/1000000000+
+                "\ntime complexity: O(2^n)");
     }
 
     /**

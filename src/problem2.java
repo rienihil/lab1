@@ -1,14 +1,20 @@
+
 import java.util.Scanner;
 
 public class problem2 {
-    public static void main(String[] args) {
+    public static void run() {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of the array: ");
         int n = sc.nextInt();
-        int[] array = new int[n];
-        for(int i=0; i<n; i++){
-            array[i]=sc.nextInt();
+        int [] array = new int[n];
+        System.out.println("Enter the elements of the array: ");
+        for (int i = 0; i < n; i++) {
+            array[i] = sc.nextInt();
         }
-        System.out.println("avgOfArr: " + avgOfArr(array, 0, array[0]));
+        long startTime = System.nanoTime();
+        System.out.println("result: " + avgOfArr(array, 0, array[0])+
+                "\nruntime: "+ (double)(System.nanoTime() - startTime)/1000000000+
+                "\ntime complexity: O(n)");
     }
 
     /**

@@ -1,12 +1,17 @@
 import java.util.Scanner;
 
 public class problem6 {
-    public static void main(String[] args) {
+    public static void run() {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number: ");
         int a = sc.nextInt();
+        System.out.println("Enter the power: ");
         int n = sc.nextInt();
 
-        System.out.println("power: " + power(a,n));
+        long startTime = System.nanoTime();
+        System.out.println("result: " + power(a, n)+
+                "\nruntime: "+ (double)(System.nanoTime() - startTime)/1000000000+
+                "\ntime complexity: O(n)");
     }
 
     /**

@@ -1,11 +1,15 @@
 import java.util.Scanner;
 
 public class problem5 {
-    public static void main(String[] args) {
+    public static void run() {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number: ");
         int n = sc.nextInt();
 
-        System.out.println("fibonacci: " + fibonacci(n));
+        long startTime = System.nanoTime();
+        System.out.println("result: " + fibonacci(n)+
+                "\nruntime: "+ (double)(System.nanoTime() - startTime)/1000000000+
+                "\ntime complexity: O(2^n)");
     }
 
     /**

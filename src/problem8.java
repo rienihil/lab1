@@ -1,12 +1,16 @@
 import java.util.Scanner;
 
 public class problem8 {
-    public static void main(String[] args) {
+    public static void run() {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the string: ");
         String s = sc.next();
 
-        System.out.print("isAllNum: ");
+        System.out.print("result: ");
+        long startTime = System.nanoTime();
         isAllNum(s, 0);
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n)");
     }
 
     /**
